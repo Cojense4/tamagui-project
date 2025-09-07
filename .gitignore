@@ -1,16 +1,48 @@
-# Exclude backups directory
-backups/
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Exclude sensitive config files
-config/*.key
-config/*.pem
-config/secrets.json
-*.env
+# Testing
+/coverage
 
-# Common exclusions
-node_modules/
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
 .DS_Store
-*.log
+*.pem
 
-# Extras
-.chats/*
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env*.local
+.env
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tamagui
+/public/tamagui.css
