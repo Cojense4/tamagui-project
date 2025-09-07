@@ -11,3 +11,7 @@ config/secrets.json
 node_modules/
 .DS_Store
 *.log
+
+# Extras
+.chats/*
+.cursor/*
