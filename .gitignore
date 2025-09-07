@@ -1,4 +1,13 @@
+# Exclude backups directory
+backups/
+
+# Exclude sensitive config files
+config/*.key
+config/*.pem
+config/secrets.json
+*.env
+
+# Common exclusions
 node_modules/
-.next/
-.env.local
+.DS_Store
 *.log
