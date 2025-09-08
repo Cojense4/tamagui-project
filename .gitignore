@@ -11,6 +11,8 @@ config/secrets.json
 node_modules/
 .DS_Store
 *.log
+.pnpm-store/*
 
 # Extras
 .chats/*
+.env.local

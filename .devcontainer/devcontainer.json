@@ -1,6 +1,6 @@
 {
   "name": "Tamagui Next.js Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
@@ -23,14 +23,19 @@
         "typescript.suggest.autoImports": true,
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+        "eslint.validate": [
+          "javascript",
+          "typescript",
+          "javascriptreact",
+          "typescriptreact"
+        ],
         "files.autoSave": "afterDelay",
         "files.autoSaveDelay": 1000
       }
     }
   },
   "forwardPorts": [3000, 1234],
-  "postCreateCommand": "pnpm install && pnpm dev",
+  "postCreateCommand": "cd src && pnpm install && pnpm dev",
   "remoteUser": "node",
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
